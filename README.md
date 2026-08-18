@@ -56,7 +56,7 @@ The network receives a vector of six features derived from the current board, in
     <br>
 The network produces a value (or set of values) that effectively represent the “weight” or score of a potential move.
 ### 2. Move Generation
-- We implemented breadth-first search (BFS) in the getAllPossiblePositions(board) function to explore all possible legal positions (defined by x, y coordinates and rotation) that the current piece can occupy.
+- I implemented breadth-first search (BFS) in the getAllPossiblePositions(board) function to explore all possible legal positions (defined by x, y coordinates and rotation) that the current piece can occupy.
 - For each possible position, a corresponding move sequence (e.g., ["Left", "RotateACW", "Down"]) is stored.
 - The AI then uses the neural network (via the getBestMoveSequence(board, network) function) to simulate the subsequent moves and evaluate the board states using the heuristic features.
 ### 3. Decision-Making Process
